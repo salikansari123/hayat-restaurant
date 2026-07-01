@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_portfolio</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="m-0 p-0 scroll-smooth bg-blue-100">
+
+
+
+    <!-- header -->
+
+
+
+    <header class="sticky top-0 z-50">
+
+        <nav class="bg-white/80 backdrop-blur-md md:flex md:justify-between flex justify-around">
+
+
+            <button id="menu-button" class="block md:hidden focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl" style="color: rgb(0, 0, 0);"></i>
+            </button>
+
+            <button id="cross" class="hidden md:hidden focus:outline-none"><i class="fa-solid fa-xmark text-2xl"
+                    style="color: rgb(0, 0, 0);"></i></button>
+
+
+            <div id="all-menu"
+                class="max-sm:hidden md:static md:min-h-fit md:w-auto md:text-black absolute max-sm:bg-amber-700 min-h-[40vh] left-0 top-15 w-full text-white leading-10 pl-4">
+
+                <ul id="mobile-menu"
+                    class="md:text-center md:flex justify-around md:gap-4 md:mt-6 md:ml-20 font-sans max-sm:text-gray-300 max-sm:">
+                    <li class="hover:text-white md:hover:text-red-500 transition-all duration-200"><a
+                            href="#home">HOME</a></li>
+                    <li class="hover:text-white md:hover:text-red-500 transition-all duration-200"><a
+                            href="#menu">MENU</a></li>
+                    <li class="hover:text-white md:hover:text-red-500 transition-all duration-200"><a
+                            href="#aboutus">ABOUT US</a></li>
+                    <li class="hover:text-white md:hover:text-red-500 transition-all duration-200"><a
+                            href="#contact">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+            <img class="text-center md:mr-50 h-15 md:h-20" src="images/1000079951.png" alt="logo">
+
+
+            <div class="md:flex md:justify-around md:gap-4 md:mt-6 md:mr-20 md:text-xl">
+
+                <div><i
+                        class="fa-solid fa-magnifying-glass text-2xl pt-5 md:pt-0 md:hover:text-red-500 transition-all duration-200"></i>
+                </div>
+
+                <div class="max-sm:hidden"><i
+                        class="fa-regular fa-circle-user text-2xl  md:hover:text-red-500 transition-all duration-200"></i>
+                </div>
+
+                <div class="max-sm:hidden"><i
+                        class="fa-regular fa-heart text-2xl  md:hover:text-red-500 transition-all duration-200"></i>
+                </div>
+
+                <div class="max-sm:hidden"><i
+                        class="fa-solid fa-cart-shopping mt-5 text-2xl md:mt-1 md:hover:text-red-500 transition-all duration-200"></i>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- hero section -->
+
+
+    <main>
+        <section id="home" class="bg-[url('/images/homepage.jpg')] h-200 md:h-170 bg-cover bg-center relative z-0">
+
+            <div
+                class="h-130 w-90 md:h-100 md:w-200 rounded-tr-3xl rounded-br-3xl top-30  bg-slate-300/60 absolute place-items-center">
+                <h1
+                    class="text-4xl leading-17 text-primary font-bold absolute place-items-center text-center md:text-5xl md:left-20 md:top-5">
+                    <span class="text-white">Welcome to Hotel Hayat </span><br>The Home of Authentic Non-Veg Flavors
+                </h1>
+                <h4
+                    class="text-2xl bottom-30 md:left-25  text-black font-semibold absolute place-items-center text-center">
+                    From juicy kebabs to spicy
+                    curries, we've got it
+                    all.</h4>
+                <button class="absolute bottom-8 left-26 md:left-30 bg-secondary text-white px-7 py-3 rounded-xl text-xl hover:bg-amber-700
+                ">Order
+                    now</button>
+            </div>
+
+        </section>
+
+        <div class="bg-slate-400 py-20">
+            <p class="text-2xl md:text-4xl text-center text-white leading-15"><span
+                    class="text-3xl md:text-5xl font-serif text-amber-300">Fresh
+                    Halal Food, Sirf Ek Click Door.</span> <br>
+                Abhi Order Karein aur Garma-Garam Khana Ghar Tak Paayen.</p>
+        </div>
+
+
+        <!-- menu -->
+
+
+
+        <section id="menu" class="md:flex md:justify-around">
+
+            <div
+                class="h-60 text-center m-4 mt-20 relative outline-2 outline-solid outline-offset-2 rounded-2xl md:h-81 md:outline-3 overflow-hidden group cursor-pointer">
+                <img src="images/Starters.png" alt="hayat" loading="lazy"
+                    class="rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:ease-out md:group-hover:scale-110">
+
+                <a href="#starter"
+                    class="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold md:text-5xl">
+                    STARTERS
+                </a>
+            </div>
+
+            <div
+                class="h-60 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl  md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
+                <img src="images/Main course.png" alt="hayat" loading="lazy"
+                    class=" rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:ease-out md:group-hover:scale-110">
+
+                <a href="#maincourse">
+                    <p
+                        class="absolute inset-0 flex items-center justify-center text-3xl text-white  font-bold md:text-5xl">
+                        MAIN COURSE</p>
+                </a>
+            </div>
+
+            <div
+                class="h-60 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
+                <img src="images/Breads.png" alt="hayat" loading="lazy"
+                    class="rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:group-hover:scale-110">
+
+                <a href="#breads">
+                    <p
+                        class="absolute inset-0 flex items-center justify-center text-3xl text-white  font-bold md:text-5xl">
+                        BREADS</p>
+                </a>
+            </div>
+
+        </section>
+
+
+
+        <!-- menu starter -->
+
+
+
+        <section id="starter" class="mt-20 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-15 m-2 md:mt-30">
+
+            <div class="grid col-span-2 md:col-span-5 gap-5 ">
+
+                <p class="text-2xl md:text-4xl text-primary font-bold">STARTERS <i
+                        class="fa-solid fa-angles-down mt-3 text-3xl text-black"></i>
+
+            </div>
+
+
+            <div
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken rosted.png" alt="mughal">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Chicken roasted</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-52 md:top-60">Chicken
+                    cooked by roasting,
+                    often <br>with spices</p>
+
+                <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500 place-items-center">From $310.00</p>
+
+                <button class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 
+                md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+            <div
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken fry.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Chicken fry</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Chicken
+                    pieces deep fried until <br>Crispy and golden Brown</p>
+
+                <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500 place-items-center">From $260.00</p>
+
+                <button class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 
+                md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+            <div
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken tikka.jpg" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Chicken tikka</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Boneless
+                    chicken marinated in spicesand grilled or baked</p>
+
+                <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $370.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+            <div
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken chilli.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51 place-items-center">
+                    Chicken chilli</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Chicken
+                    pieces cooked in a spicy and tangy chinese inspired sauce</p>
+
+                <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $340.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+        </section>
+
+
+
+        <!-- main course -->
+
+
+
+        <section id="maincourse" class="mt-100 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-15 m-2  md:mt-30">
+
+            <div class="grid col-span-2 md:col-span-5 gap-5 ">
+
+                <p class="text-2xl md:text-4xl text-primary font-bold">MAIN COURSE<i
+                        class="fa-solid fa-angles-down mt-3 text-3xl text-black"></i>
+
+            </div>
+
+
+            <div
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken mughlai.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Chicken mughlai</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-52 md:top-60">Chicken
+                    cooked in rich and creamy gravy.</p>
+
+                <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $240.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+            <div
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/Butter chicken.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Butter chicken</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-52 md:top-60">Tandoori
+                    chicken cooked in a creamy tomato based gravy.</p>
+
+                <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $210.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+            <div
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/Kadhai chicken.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    kadhai chicken</p>
+
+                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Chicken
+                    cooked with bell pappers, onions and spices in a Kadhai.</p>
+
+                <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $240.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+            <div
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken rara.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Chicken rara</p>
+
+                <p class="absolute text-md text-primary font-bold top-48 text-center md:top-60">Minced
+                    chicken and chicken pieces cooked in a rich and spicy gravy</p>
+
+                <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $570.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+        </section>
+
+
+
+        <!-- breads -->
+
+
+
+        <section id="breads" class="mt-100 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-10 m-2 md:mt-30">
+
+            <div class="grid col-span-2 md:col-span-5 gap-5 ">
+
+                <p class="text-2xl md:text-4xl text-primary font-bold">BREADS <i
+                        class="fa-solid fa-angles-down mt-3 text-3xl text-black"></i>
+
+            </div>
+
+
+            <div
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/Family naan.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Family naan</p>
+
+
+                <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $60.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+            <div
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/rumali roti.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Rumali roti</p>
+
+                <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $20.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+            <div
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/laccha paratha.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                    Laccha paratha</p>
+
+                <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $60.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+            <div
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+
+                <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/tandoorie roti.png" alt="mughal"
+                    loading="lazy">
+
+                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51 place-items-center">
+                    Tandoori roti</p>
+
+                <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
+
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <!-- <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> -->
+
+                </div>
+
+                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $310.00</p>
+
+                <button
+                    class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
+                    to cart</button>
+            </div>
+
+
+        </section>
+
+
+        <!-- special dishes -->
+
+
+
+        <section>
+
+            <div class="flex mt-100 md:mt-30 justify-center">
+
+                <i class="fa-solid fa-star text-3xl md:text-5xl mt-1 text-center" style="color: rgb(255, 212, 59);"></i>
+
+                <p class="text-3xl md:text-5xl text-center font-bold">Hayat special</p>
+
+                <i class="fa-solid fa-star text-3xl md:text-5xl mt-1" style="color: rgb(255, 212, 59);"></i>
+
+            </div>
+
+            <div class="relative">
+                <img class="mt-15 md:m-27 rounded-xl md:h-screen" src="/images/hayat special thali.png" alt=""
+                    loading="lazy">
+
+                <button
+                    class="absolute bottom-7 left-33 border-2 border-solid bg-primary text-white px-5 py-1 rounded-xl md:px-15 md:py-4 md:rounded-2xl md:bottom-50 md:left-160 md:transition-all md:hover:-translate-y-2 md:duration-300">Order
+                    now</button>
+            </div>
+        </section>
+
+
+
+        <!-- testimonials -->
+
+
+
+        <section class="bg-green-100 text-center p-10">
+
+            <p class="text-4xl mb-4 font-bold text-secondary">Testimonial</p>
+
+            <div class="leading-7 font-semibold mb-5">
+                <p>
+                    "I ordered the Non-Veg Thali and it exceeded my expectations. <br>The biryani was full of flavor,
+                    the
+                    curries
+                    were rich <br>and delicious, the tandoori roti was fresh, and the gulab <br>jamun was the perfect
+                    sweet
+                    ending.
+                    Fast delivery, great packaging,<br> and amazing taste. Highly recommended!"
+                </p>
+
+                <span class="text-xl text-blue-700">Richa</span>
+            </div>
+
+        </section>
+
+
+
+        <!-- About us -->
+
+
+
+        <section id="aboutus" class="mt-30 md:mt-40">
+
+            <span class="text-4xl font-serif flex justify-center">ABOUT US</span>
+
+            <div
+                class="h-[135vh] mt-10 m-3 p-2 rounded-xl bg-gray-300 md:flex md:justify-around md:gap-10 md:h-[110vh]">
+
+                <div>
+                    <img class="rounded-xl md:h-[50vh]" src="images/aboutus.png" alt="hayat" loading="lazy">
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mt-3 leading-tight">
+                        Welcome to
+                        <span class="text-red-600">Hotel Hayat</span>
+                    </h2>
+
+                    <p class="text-gray-600 mt-6 leading-8">
+                        At Hotel Hayat, we believe that great food brings people together.
+                        Our chefs prepare every dish using fresh halal ingredients and
+                        authentic recipes to deliver rich flavors in every bite.
+                    </p>
+
+                    <p class="text-gray-600 mt-5 leading-8">
+                        Whether you're craving spicy biryani, juicy tandoori, creamy curries,
+                        or a complete non-veg thali, we are committed to serving delicious
+                        meals with exceptional quality and quick service.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-2 gap-5 mt-8 md:mt-40">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xl">
+                                🍗
+                            </div>
+                            <span class="font-medium">Fresh Halal Food</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xl">
+                                🚚
+                            </div>
+                            <span class="font-medium">Fast Delivery</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xl">
+                                👨‍🍳
+                            </div>
+                            <span class="font-medium">Expert Chefs</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xl">
+                                ⭐
+                            </div>
+                            <span class="font-medium">Premium Quality</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Button -->
+                    <div class="md:ml-60 md:mt-10">
+                        <a href="#menu"
+                            class="inline-block mt-10 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition">
+                            Explore Our Menu
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- contact us -->
+
+
+
+        <section id="contact">
+
+            <span class="mt-30 text-3xl flex justify-center font-bold font-serif">CONTACT</span>
+
+            <div class="m-3 rounded-2xl bg-slate-300 p-3 md:mt-10 md:flex md:justify-around md:h-[80vh]">
+
+                <div class="flex flex-col m-10">
+
+                    <p class="text-2xl text-primary font-bold mb-5 md:text-3xl">Contact form</p>
+
+                    <form action="" class="flex flex-col gap-2">
+                        <label class="mt-3 md:text-xl" for="name">Your Name</label>
+                        <input class="bg-white md:w-100 md:px-1" id="name type=" text" placeholder="">
+
+                        <label class="mt-3 md:text-xl" for="email">Your Email</label>
+                        <input class="bg-white md:w-100 md:px-1" id="email" type="email" placeholder="">
+
+                        <label class="mt-3 md:text-xl" for="feedback">Your Massage (Optional)</label>
+                        <textarea class="bg-white md:w-100 md:h-30" itemid="feedback" name="" id=""></textarea>
+                    </form>
+
+                    <div class="text-center mt-7">
+                        <button class="bg-primary text-white py-2 px-10 rounded-xl hover:bg-red-600">SUBMIT</button>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="m-10 flex flex-col ">
+
+                    <span class="text-2xl text-primary font-serif md:text-3xl">Address</span>
+                    <p class="md:text-xl md:mt-2 cursor-pointer hover:text-primary"><i
+                            class="fa-solid fa-location-dot md:text-2xl" style="color: rgb(0, 0, 0);"></i> Mangrol
+                        Bypass,
+                        Gandhi colony,
+                        Baran, Rajasthan 325205</p>
+
+                    <span class="text-2xl text-primary font-serif mt-4 md:text-3xl md:mt-10">Phones</span>
+                    <a class="md:text-xl md:mt-2 cursor-pointer hover:text-primary" href="tel:9602443037"><i
+                            class="fa-solid fa-phone md:text-2xl" style="color: rgb(0, 0, 0);"></i> 9602443037</a>
+
+                    <span class="text-2xl text-primary font-serif mt-4 md:text-3xl md:mt-10">Email</span>
+                    <a class="md:text-xl md:mt-2 cursor-pointer hover:text-primary" href="mailto:name@gmail.com"><i
+                            class="fa-regular fa-envelope md:text-2xl" style="color: rgb(0, 0, 0);"></i>
+                        name@gmail.com</a>
+
+                    <span class="text-2xl text-primary font-serif mt-4 md:text-3xl md:mt-10">Follow us</span>
+                    <div class="flex md:mt-2 md:gap-2">
+                        <a href="https://www.instagram.com/hotel_hayaat/?hl=en" target="_blank"><i
+                                class="fa-brands fa-instagram text-xl md:text-3xl" style="color: rgb(0, 0, 0)"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin text-xl md:text-3xl"
+                                style="color: rgb(0, 0, 0);"></i></a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <!-- footer -->
+
+
+
+    <footer class="bg-secondary md:flex md:justify-between md:p-20 mt-30">
+
+        <div class="flex-col leading-12 text-white text-center tracking-normal">
+            <a href="#aboutus" class="hover:text-cart">About us</a><br>
+            <a href="#contact" class="hover:text-cart">Contact us</a><br>
+            <a href="#" class="hover:text-cart">Shipping policy</a><br>
+            <a href="#" class="hover:text-cart">Refund policy</a><br>
+            <a href="#" class="hover:text-cart">Privacy policy</a><br>
+            <a href="#" class="hover:text-cart">Terms & Conditions</a><br>
+        </div>
+
+
+        <div class="place-items-center leading-2 md:ml-50">
+            <img src="images/1000079951.png" alt="hayat" height="100" width="400" loading="lazy">
+
+            <p class="text-2xl text-white">A cleanest restaurant</p>
+
+            <div class="flex gap-7 justify-center mt-7">
+                <a href="https://www.instagram.com/hotel_hayaat/?hl=en" target="_blank"><i
+                        class="fa-brands fa-instagram text-2xl" style="color: rgb(255, 255, 255);"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-whatsapp text-2xl"
+                        style="color: rgb(255, 255, 255);"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in text-2xl"
+                        style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+        </div>
+
+
+        <div class="text-center mt-10 md:mt-0">
+
+            <div>
+
+                <span class="text-2xl font-semibold text-white place-items-center">HAYAT'S CRAZY DEAL'S</span>
+
+                <p class="mt-4">Admin sometimes gets high on delicious food <br>and might post some unbelievable offers
+                    <br>here in
+                    addition to the regular offers.
+                </p>
+            </div>
+
+            <div class="mt-10">
+
+                <span class="text-2xl font-bold text-white">Payment method </span>
+
+                <div class="flex gap-2 justify-center mt-4">
+
+                    <img class="rounded-md" src="images/pay pal image" alt="card" loading="lazy" height="30" width="50">
+
+                    <img class="rounded-md" src="images/phone pay image" alt="card" loading="lazy" height="30"
+                        width="50">
+
+                    <img class="rounded-md" src="images/master card image" alt="card" loading="lazy" height="30"
+                        width="50">
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="format.js"></script>
+
+</body>
+
+</html>

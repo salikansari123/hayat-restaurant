@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --color-day: #D9CAB3;
+    --color-night: #1A1A1A;
+    --color-primary: #ff002b;
+    --color-secondary: #BC8034;
+    --color-cart: #90323D;
+    --color-advance: #ede0d4;
+};
+
+html {
+    scroll-behavior: smooth;
+}
