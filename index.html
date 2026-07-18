@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_portfolio</title>
+    <title>Hayat restaurent</title>
 
     <!-- css link -->
     <link rel="stylesheet" href="dist/output.css">
@@ -14,9 +14,16 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
-<body class="m-0 p-0 scroll-smooth bg-blue-100">
+<body
+    class="m-0 p-0 scroll-smooth md:bg-linear-to-br md:from-stone-50 via-orange-50/30 md:to-amber-100/50 bg-linear-to-t from-gray-50 to-gray-300">
 
 
 
@@ -26,21 +33,21 @@
 
     <header class="sticky top-0 z-50">
 
-        <nav class="bg-white/80 backdrop-blur-md md:flex md:justify-between flex justify-around">
+        <nav id="navigation" class="bg-white/80 backdrop-blur-md md:flex md:justify-between flex justify-around">
 
 
             <button id="menu-button" class="block md:hidden focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl" style="color: rgb(0, 0, 0);"></i>
             </button>
 
-            <button id="cross" class="hidden md:hidden focus:outline-none"><i class="fa-solid fa-xmark text-2xl"
-                    style="color: rgb(0, 0, 0);"></i></button>
+            <button id="openmenubtn" class="hidden md:hidden focus:outline-none"><i
+                    class="fa-solid fa-align-left text-2xl" style="color: rgb(0, 0, 0);"></i></button>
 
 
             <div id="all-menu"
-                class="max-sm:hidden md:static md:min-h-fit md:w-auto md:text-black absolute max-sm:bg-amber-700 min-h-[40vh] left-0 top-15 w-full text-white leading-10 pl-4">
+                class="max-sm:hidden md:static md:min-h-fit md:w-auto md:text-black absolute max-sm:bg-black min-h-[40vh] left-0 top-15 w-full text-white leading-10 pl-4">
 
-                <ul id="mobile-menu"
+                <ul
                     class="md:text-center md:flex justify-around md:gap-4 md:mt-6 md:ml-20 font-sans max-sm:text-gray-300 max-sm:">
                     <li class="hover:text-white md:hover:text-red-500 transition-all duration-200"><a
                             href="#home">HOME</a></li>
@@ -52,6 +59,9 @@
                             href="#contact">CONTACT</a></li>
                 </ul>
 
+                <button id="cross" class="hidden md:hidden focus:outline-none absolute top-1 right-4"><i
+                        class="fa-solid fa-xmark text-2xl text-gray-400 hover:text-white"></i></button>
+
             </div>
 
             <img class="text-center md:mr-50 h-15 md:h-20" src="images/1000079951.png" alt="logo">
@@ -59,7 +69,7 @@
 
             <div class="md:flex md:justify-around md:gap-4 md:mt-6 md:mr-20 md:text-xl">
 
-                <div><i
+                <div id="searchbtn" class=""><i
                         class="fa-solid fa-magnifying-glass text-2xl pt-5 md:pt-0 md:hover:text-red-500 transition-all duration-200"></i>
                 </div>
 
@@ -76,6 +86,20 @@
                 </div>
             </div>
 
+            <div id="search-items" class="h-screen relative hidden">
+
+                <h1 class="uppercase absolute right-24 top-20 text-center text-2xl font-bold font-serif md:text-4xl md:right-175 md:top-30">search your favourate dishes ?</h1>
+
+                <form action="" class="absolute right-6 top-60 flex gap-7 uppercase md:top-85 md:right-168">
+                    <input type="search" placeholder="search" class="py-2 px-10 border-b-2">
+                </form>
+
+                <button id="enter" class="bg-amber-600 text-white text-2xl py-2 px-8 absolute top-80 right-23 rounded-xl hover:bg-amber-700 border-2 border-black/30 md:top-100 md:right-183">ENTER</button>
+            </div>
+
+            <button id="back" class="hidden focus:outline-none absolute top-3 right-4"><i
+                        class="fa-solid fa-xmark text-2xl text-gray-600 hover:text-black"></i></button>
+
         </nav>
 
     </header>
@@ -86,29 +110,36 @@
 
 
     <main>
-        <section id="home" class="bg-[url('/images/homepage.jpg')] h-200 md:h-170 bg-cover bg-center relative z-0">
+        <section id="home" class="bg-[url('/images/homepage.jpg')] h-200 md:h-170 bg-cover bg-center relative z-0 ">
 
-            <div
-                class="h-130 w-90 md:h-100 md:w-200 rounded-tr-3xl rounded-br-3xl top-30  bg-slate-300/60 absolute place-items-center">
-                <h1
-                    class="text-4xl leading-17 text-primary font-bold absolute place-items-center text-center md:text-5xl md:left-20 md:top-5">
-                    <span class="text-white">Welcome to Hotel Hayat </span><br>The Home of Authentic Non-Veg Flavors
-                </h1>
-                <h4
-                    class="text-2xl bottom-30 md:left-25  text-black font-semibold absolute place-items-center text-center">
-                    From juicy kebabs to spicy
-                    curries, we've got it
-                    all.</h4>
-                <button class="absolute bottom-8 left-26 md:left-30 bg-secondary text-white px-7 py-3 rounded-xl text-xl hover:bg-amber-700
+            <div class="bg-slate-700/40 h-[110vh] md:h-[94vh]">
+
+                <div
+                    class="h-70 w-75 md:h-100 md:w-200 rounded-tr-3xl rounded-br-3xl top-30  bg-slate-300/60 backdrop-blur-sm absolute flex flex-col items-center">
+
+                    <span id="animate" class="text-sm md:text-xl mt-3 font-black uppercase tracking-wider absolute">Welcome to Hotel
+                        Hayat </span>
+
+                    <h1 id="animate2"
+                        class="text-xl leading-10 md:leading-17 mt-10 text-gray-900 font-black  absolute md:text-5xl md:left-20 md:top-5 text-center">
+                        The Home of Authentic <span class="text-red-600">Non-Veg</span> Flavors
+                    </h1>
+                    <h4 id="animate3"
+                        class="bottom-25 md:text-xl md:bottom-25 md:left-58 text-gray-600 leading-relaxed absolute text-center">
+                        From juicy kebabs to spicy
+                        curries, <br>we've got it
+                        all.</h4>
+                    <button id="animate4" class="absolute bottom-8 left-16 md:left-80 bg-amber-600 text-white px-7 py-3 rounded-xl hover:bg-amber-700 font-bold tracking-wider shadow-md active:scale-95 transition-all uppercase 
                 ">Order
-                    now</button>
+                        now</button>
+                </div>
             </div>
 
         </section>
 
-        <div class="bg-slate-400 py-20">
-            <p class="text-2xl md:text-4xl text-center text-white leading-15"><span
-                    class="text-3xl md:text-5xl font-serif text-amber-300">Fresh
+        <div class="bg-slate-900 py-20">
+            <p class="text-2xl md:text-4xl text-center text-slate-200 leading-15"><span
+                    class="text-3xl md:text-5xl font-serif text-amber-400">Fresh
                     Halal Food, Sirf Ek Click Door.</span> <br>
                 Abhi Order Karein aur Garma-Garam Khana Ghar Tak Paayen.</p>
         </div>
@@ -120,37 +151,37 @@
 
         <section id="menu" class="md:flex md:justify-around">
 
-            <div
-                class="h-60 text-center m-4 mt-20 relative outline-2 outline-solid outline-offset-2 rounded-2xl md:h-81 md:outline-3 overflow-hidden group cursor-pointer">
-                <img src="images/Starters.png" alt="hayat" loading="lazy"
-                    class="rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:ease-out md:group-hover:scale-110">
-
-                <a href="#starter"
-                    class="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold md:text-5xl">
-                    STARTERS
-                </a>
-            </div>
-
-            <div
-                class="h-60 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl  md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
-                <img src="images/Main course.png" alt="hayat" loading="lazy"
+           <div
+                class="h-55 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl  md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
+                <img src="images/Starters.png" alt="hayat"
                     class=" rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:ease-out md:group-hover:scale-110">
 
                 <a href="#maincourse">
                     <p
-                        class="absolute inset-0 flex items-center justify-center text-3xl text-white  font-bold md:text-5xl">
+                        class="absolute inset-0 flex items-center justify-center text-3xl text-white md:text-5xl bg-black/40 font-black tracking-wider">
+                        STARTER</p>
+                </a>
+            </div>
+            <div
+                class="h-55 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl  md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
+                <img src="images/Main course.png" alt="hayat"
+                    class=" rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:ease-out md:group-hover:scale-110">
+
+                <a href="#maincourse">
+                    <p
+                        class="absolute inset-0 flex items-center justify-center text-3xl text-white md:text-5xl bg-black/40 font-black tracking-wider">
                         MAIN COURSE</p>
                 </a>
             </div>
 
             <div
-                class="h-60 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
-                <img src="images/Breads.png" alt="hayat" loading="lazy"
+                class="h-55 text-center m-4 mt-10 relative outline-2 outline-solid outline-offset-2 rounded-2xl md:h-81 md:outline-3 md:mt-20 overflow-hidden group cursor-pointer">
+                <img src="images/Breads.png" alt="hayat"
                     class="rounded-2xl blur-[1px] object-cover md:transition-transform md:duration-500 md:group-hover:scale-110">
 
                 <a href="#breads">
                     <p
-                        class="absolute inset-0 flex items-center justify-center text-3xl text-white  font-bold md:text-5xl">
+                        class="absolute inset-0 flex items-center justify-center text-3xl text-white md:text-5xl bg-black/40 font-black tracking-wider">
                         BREADS</p>
                 </a>
             </div>
@@ -163,25 +194,32 @@
 
 
 
-        <section id="starter" class="mt-20 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-15 m-2 md:mt-30">
+        <section id="starter" class="mt-20 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-25 m-2 md:mt-30">
 
             <div class="grid col-span-2 md:col-span-5 gap-5 ">
 
-                <p class="text-2xl md:text-4xl text-primary font-bold">STARTERS <i
-                        class="fa-solid fa-angles-down mt-3 text-3xl text-black"></i>
+                <div class="flex justify-between">
+
+                    <div class="flex-1 border-b-3 border-red-500 border-solid mb-4 md:mb-4.5"></div>
+
+                    <p class="text-2xl md:text-4xl text-amber-600 font-bold mx-5  md:mx-14 font-serif">STARTERS</p>
+
+                    <div class="flex-1 border-b-3  border-red-500 border-solid mb-4 md:mb-4.5"> </div>
+
+                </div>
 
             </div>
 
 
             <div
-                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-xl">
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-xl md:ml-30 border-2 border-solid border-gray-400/20">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken rosted.png" alt="mughal">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 absolute top-42 font-bold font-serif md:top-51">
                     Chicken roasted</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-52 md:top-60">Chicken
+                <p class="absolute text-md text-gray-600 text-center top-52 md:top-60">Chicken
                     cooked by roasting,
                     often <br>with spices</p>
 
@@ -195,7 +233,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500 place-items-center">From $310.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600 place-items-center">From $310.00</p>
 
                 <button class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 
                 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -204,18 +242,18 @@
 
 
             <div
-                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken fry.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold absolute top-42 font-serif  md:top-51">
                     Chicken fry</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Chicken
+                <p class="absolute text-md text-gray-600 text-center top-48 md:top-60">Chicken
                     pieces deep fried until <br>Crispy and golden Brown</p>
 
-                <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
+                <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
 
                     <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
                     <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
@@ -225,7 +263,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500 place-items-center">From $260.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600 place-items-center">From $260.00</p>
 
                 <button class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 
                 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -234,15 +272,15 @@
 
 
             <div
-                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken tikka.jpg" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold absolute top-42 font-serif  md:top-51">
                     Chicken tikka</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Boneless
+                <p class="absolute text-md text-gray-600 text-center top-48 md:top-60">Boneless
                     chicken marinated in spicesand grilled or baked</p>
 
                 <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
@@ -255,7 +293,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $370.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $370.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -263,15 +301,16 @@
             </div>
 
             <div
-                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-10 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken chilli.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51 place-items-center">
+                <p
+                    class="text-xl md:text-3xl text-gray-900 absolute top-42 font-bold font-serif md:top-51 place-items-center">
                     Chicken chilli</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Chicken
+                <p class="absolute text-md text-gray-600 text-center top-48 md:top-60">Chicken
                     pieces cooked in a spicy and tangy chinese inspired sauce</p>
 
                 <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
@@ -284,7 +323,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $340.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $340.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -300,26 +339,33 @@
 
 
 
-        <section id="maincourse" class="mt-100 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-15 m-2  md:mt-30">
+        <section id="maincourse" class="mt-100 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-25 m-2 md:mt-30">
 
             <div class="grid col-span-2 md:col-span-5 gap-5 ">
 
-                <p class="text-2xl md:text-4xl text-primary font-bold">MAIN COURSE<i
-                        class="fa-solid fa-angles-down mt-3 text-3xl text-black"></i>
+                <div class="flex justify-between">
+
+                    <div class="flex-1 border-b-3 border-red-500 border-solid mb-4 md:mb-4.5"></div>
+
+                    <p class="text-2xl md:text-4xl text-amber-600 font-bold mx-5  md:mx-14 font-serif">MAIN COURSE</p>
+
+                    <div class="flex-1 border-b-3  border-red-500 border-solid mb-4 md:mb-4.5"> </div>
+
+                </div>
 
             </div>
 
 
             <div
-                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken mughlai.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold absolute top-42 font-serif md:top-51">
                     Chicken mughlai</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-52 md:top-60">Chicken
+                <p class="absolute text-md text-gray-600 text-center top-52 md:top-60">Chicken
                     cooked in rich and creamy gravy.</p>
 
                 <div class="flex gap-2 absolute top-73 text-md place-items-center md:top-78 md:text-xl">
@@ -332,7 +378,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $240.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $240.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -341,15 +387,15 @@
 
 
             <div
-                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/Butter chicken.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51">
                     Butter chicken</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-52 md:top-60">Tandoori
+                <p class="absolute text-md text-gray-600 text-center top-48 md:top-60">Tandoori
                     chicken cooked in a creamy tomato based gravy.</p>
 
                 <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
@@ -362,7 +408,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $210.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $210.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -371,15 +417,15 @@
 
 
             <div
-                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/Kadhai chicken.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51">
                     kadhai chicken</p>
 
-                <p class="absolute text-md text-primary font-bold text-center top-48 md:top-60">Chicken
+                <p class="absolute text-md text-gray-700 text-center top-48 md:top-60">Chicken
                     cooked with bell pappers, onions and spices in a Kadhai.</p>
 
                 <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
@@ -392,7 +438,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $240.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $240.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -400,15 +446,15 @@
             </div>
 
             <div
-                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-20 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/chicken rara.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51">
                     Chicken rara</p>
 
-                <p class="absolute text-md text-primary font-bold top-48 text-center md:top-60">Minced
+                <p class="absolute text-md text-gray-600 top-48 text-center md:top-60">Minced
                     chicken and chicken pieces cooked in a rich and spicy gravy</p>
 
                 <div class="flex gap-2 absolute top-73 text-md md:top-78 md:text-xl">
@@ -421,7 +467,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $570.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $570.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -437,23 +483,29 @@
 
 
 
-        <section id="breads" class="mt-100 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-10 m-2 md:mt-30">
+        <section id="breads" class="mt-100 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-25 m-2 md:mt-30">
 
-            <div class="grid col-span-2 md:col-span-5 gap-5 ">
+            <div class="grid col-span-2 md:col-span-5 gap-5">
 
-                <p class="text-2xl md:text-4xl text-primary font-bold">BREADS <i
-                        class="fa-solid fa-angles-down mt-3 text-3xl text-black"></i>
+                <div class="flex justify-between">
 
+                    <div class="flex-1 border-b-3 border-red-500 border-solid mb-4 md:mb-4.5"></div>
+
+                    <p class="text-2xl md:text-4xl text-amber-600 font-bold mx-5  md:mx-14 font-serif">BREADS</p>
+
+                    <div class="flex-1 border-b-3  border-red-500 border-solid mb-4 md:mb-4.5"> </div>
+
+                </div>
             </div>
 
 
             <div
-                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/Family naan.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51">
                     Family naan</p>
 
 
@@ -467,7 +519,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $60.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $60.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -476,12 +528,12 @@
 
 
             <div
-                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/rumali roti.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51">
                     Rumali roti</p>
 
                 <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
@@ -494,7 +546,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $20.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $20.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -503,12 +555,12 @@
 
 
             <div
-                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/laccha paratha.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51">
+                <p class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51">
                     Laccha paratha</p>
 
                 <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
@@ -521,7 +573,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $60.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $60.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -529,12 +581,13 @@
             </div>
 
             <div
-                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:shadow-2xl">
+                class="h-25 w-40 mt-90 md:mt-0 md:h-120 md:w-70 bg-white/30 rounded-2xl relative z-30 place-items-center group md:transition-all md:hover:-translate-y-2 md:duration-300 md:hover:shadow-2xl md:ml-30">
 
                 <img class="h-40 md:h-50 w-full rounded-t-2xl absolute " src="/images/tandoorie roti.png" alt="mughal"
                     loading="lazy">
 
-                <p class="text-xl md:text-3xl text-secondary absolute font-serif top-42  md:top-51 place-items-center">
+                <p
+                    class="text-xl md:text-3xl text-gray-900 font-bold font-serif absolute top-42  md:top-51 place-items-center">
                     Tandoori roti</p>
 
                 <div class="flex gap-2 absolute top-63 text-md md:top-78 md:text-xl">
@@ -547,7 +600,7 @@
 
                 </div>
 
-                <p class="absolute top-78 md:top-85 text-2xl text-green-500">From $310.00</p>
+                <p class="absolute top-78 md:top-85 text-xl text-amber-600">From $310.00</p>
 
                 <button
                     class="absolute top-90 px-12 py-1 bg-secondary rounded-2xl text-white font-bold md:top-100 md:left-13 md:px-12 md:py-4 hover:bg-amber-700">Add
@@ -566,20 +619,22 @@
 
             <div class="flex mt-100 md:mt-30 justify-center">
 
-                <i class="fa-solid fa-star text-3xl md:text-5xl mt-1 text-center" style="color: rgb(255, 212, 59);"></i>
+                <!-- <i class="fa-solid fa-star text-3xl md:text-5xl mt-1 text-center" style="color: rgb(255, 212, 59);"></i> -->
 
-                <p class="text-3xl md:text-5xl text-center font-bold">Hayat special</p>
+                <p
+                    class="text-3xl md:text-5xl text-center font-bold font-serif text-transparent bg-clip-text bg-linear-to-r from-red-700 via-amber-600 to-yellow-500 uppercase border-b-3 border-solid border-amber-500">
+                    Hayat Special</p>
 
-                <i class="fa-solid fa-star text-3xl md:text-5xl mt-1" style="color: rgb(255, 212, 59);"></i>
+                <!-- <i class="fa-solid fa-star text-3xl md:text-5xl mt-1" style="color: rgb(255, 212, 59);"></i> -->
 
             </div>
 
-            <div class="relative">
+            <div class="relative mt-20">
                 <img class="mt-15 md:m-27 rounded-xl md:h-screen" src="/images/hayat special thali.png" alt=""
                     loading="lazy">
 
                 <button
-                    class="absolute bottom-7 left-33 border-2 border-solid bg-primary text-white px-5 py-1 rounded-xl md:px-15 md:py-4 md:rounded-2xl md:bottom-50 md:left-160 md:transition-all md:hover:-translate-y-2 md:duration-300">Order
+                    class="absolute bottom-7 left-33 border-2 border-solid bg-amber-600 text-white px-5 py-1 rounded-xl md:px-15 md:py-4 md:rounded-2xl md:bottom-50 md:left-160 md:transition-all md:hover:-translate-y-2 md:duration-300 hover:shadow-2xl">Order
                     now</button>
             </div>
         </section>
@@ -590,11 +645,11 @@
 
 
 
-        <section class="bg-green-100 text-center p-10">
+        <section class="border-b border-solid border-gray-400 text-center p-10 rounded-3xl">
 
-            <p class="text-4xl mb-4 font-bold text-secondary">Testimonial</p>
+            <p class="text-4xl mb-8 font-bold text-gray-900 tracking-wide font-serif">Testimonial</p>
 
-            <div class="leading-7 font-semibold mb-5">
+            <div class="leading-7 font-semibold mb-5 text-stone-500">
                 <p>
                     "I ordered the Non-Veg Thali and it exceeded my expectations. <br>The biryani was full of flavor,
                     the
@@ -605,7 +660,7 @@
                     Fast delivery, great packaging,<br> and amazing taste. Highly recommended!"
                 </p>
 
-                <span class="text-xl text-blue-700">Richa</span>
+                <span class=" text-black">Richa</span>
             </div>
 
         </section>
@@ -686,7 +741,7 @@
                     <!-- Button -->
                     <div class="md:ml-60 md:mt-10">
                         <a href="#menu"
-                            class="inline-block mt-10 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition">
+                            class="inline-block mt-10 bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition">
                             Explore Our Menu
                         </a>
                     </div>
@@ -710,7 +765,7 @@
 
                 <div class="flex flex-col m-10">
 
-                    <p class="text-2xl text-primary font-bold mb-5 md:text-3xl">Contact form</p>
+                    <p class="text-2xl text-amber-600 font-bold mb-5 md:text-3xl">Contact form</p>
 
                     <form action="" class="flex flex-col gap-2">
                         <label class="mt-3 md:text-xl" for="name">Your Name</label>
@@ -724,7 +779,7 @@
                     </form>
 
                     <div class="text-center mt-7">
-                        <button class="bg-primary text-white py-2 px-10 rounded-xl hover:bg-red-600">SUBMIT</button>
+                        <button class="bg-amber-600 text-white py-2 px-10 rounded-xl hover:bg-amber-700">SUBMIT</button>
                     </div>
                 </div>
 
@@ -734,23 +789,23 @@
 
                 <div class="m-10 flex flex-col ">
 
-                    <span class="text-2xl text-primary font-serif md:text-3xl">Address</span>
-                    <p class="md:text-xl md:mt-2 cursor-pointer hover:text-primary"><i
+                    <span class="text-2xl text-amber-600 font-serif md:text-3xl">Address</span>
+                    <p class="md:text-xl md:mt-2 cursor-pointer hover:text-amber-600"><i
                             class="fa-solid fa-location-dot md:text-2xl" style="color: rgb(0, 0, 0);"></i> Mangrol
                         Bypass,
                         Gandhi colony,
                         Baran, Rajasthan 325205</p>
 
-                    <span class="text-2xl text-primary font-serif mt-4 md:text-3xl md:mt-10">Phones</span>
-                    <a class="md:text-xl md:mt-2 cursor-pointer hover:text-primary" href="tel:9602443037"><i
+                    <span class="text-2xl text-amber-600 font-serif mt-4 md:text-3xl md:mt-10">Phones</span>
+                    <a class="md:text-xl md:mt-2 cursor-pointer hover:text-amber-600" href="tel:9602443037"><i
                             class="fa-solid fa-phone md:text-2xl" style="color: rgb(0, 0, 0);"></i> 9602443037</a>
 
-                    <span class="text-2xl text-primary font-serif mt-4 md:text-3xl md:mt-10">Email</span>
-                    <a class="md:text-xl md:mt-2 cursor-pointer hover:text-primary" href="mailto:name@gmail.com"><i
+                    <span class="text-2xl text-amber-600 font-serif mt-4 md:text-3xl md:mt-10">Email</span>
+                    <a class="md:text-xl md:mt-2 cursor-pointer hover:text-amber-600" href="mailto:name@gmail.com"><i
                             class="fa-regular fa-envelope md:text-2xl" style="color: rgb(0, 0, 0);"></i>
                         name@gmail.com</a>
 
-                    <span class="text-2xl text-primary font-serif mt-4 md:text-3xl md:mt-10">Follow us</span>
+                    <span class="text-2xl text-amber-600 font-serif mt-4 md:text-3xl md:mt-10">Follow us</span>
                     <div class="flex md:mt-2 md:gap-2">
                         <a href="https://www.instagram.com/hotel_hayaat/?hl=en" target="_blank"><i
                                 class="fa-brands fa-instagram text-xl md:text-3xl" style="color: rgb(0, 0, 0)"></i></a>

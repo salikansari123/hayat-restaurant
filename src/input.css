@@ -7,8 +7,48 @@
     --color-secondary: #BC8034;
     --color-cart: #90323D;
     --color-advance: #ede0d4;
+    --font-serif: "Cinzel", serif;
 };
+
 
 html {
     scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+#animate {
+    animation: fadeUp  1s ease;
+    animation-delay: 0.3s;
+}
+
+#animate2 {
+    animation: fadeUp 1.3s ease;
+    animation-delay: 0.3s;
+}
+
+#animate3 {
+    animation: fadeUp 1.6s ease;
+    animation-delay: 0.3s;
+}
+
+#animate4 {
+    animation: fadeUp 1.9s ease;
+    animation-delay: 0.3s;
+}
+
+
+
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
