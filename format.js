@@ -10,7 +10,8 @@ openbtn.addEventListener('click', () => {
     menu.classList.remove('max-sm:hidden')
     closebtn.classList.remove('hidden')
     openbtn.classList.add('hidden')
-    openbar.classList.remove('hidden')   
+    openbar.classList.remove('hidden')
+
 })
 
 closebtn.addEventListener('click', () => {
@@ -65,9 +66,6 @@ backbtn.addEventListener('click', () => {
     backbtn.classList.add('hidden')
     openbtn.classList.remove('hidden')
 })
-
-
-
 
 
 
